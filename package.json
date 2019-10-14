@@ -1,0 +1,13 @@
+{
+  "name": "pathfinder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nuxt",
+    "build": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.10.1"
+  }
+}
