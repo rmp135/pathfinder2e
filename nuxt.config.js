@@ -1,4 +1,10 @@
-module.exports = {
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/pathfinder2e/'
+  }
+} : {}
+
+export default {
   plugins: [
   ],
   css: [
@@ -7,5 +13,6 @@ module.exports = {
   loading: true,
   generate: {
     dir: 'docs'
-  }
+  },
+  ...routerBase
 }

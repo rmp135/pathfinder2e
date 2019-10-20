@@ -5,9 +5,12 @@
   "license": "MIT",
   "scripts": {
     "start": "nuxt",
-    "build": "nuxt generate"
+    "build": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
     "nuxt": "^2.10.1"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3"
   }
 }
