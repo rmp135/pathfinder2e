@@ -4,24 +4,11 @@ export default [
     hp: 10,
     size: "medium",
     speed: 20,
-    mods: [
-     {
-        type: "con",
-        value: 2
-      },
-      {
-        type: "wis",
-        value: 2
-      },
-      {
-        type: "cha",
-        value: -2
-      }
-    ],
+    boosts: ["con", "wis"],
+    flaw: "cha",
     heritages: [
       {
         name: "Ancient-Blooded Dwarf",
-        description: "Dwarven heroes of old could shrug off their enemies' magic, and some of that resistance manigest in you. You gan hte Call on Ancient Blood reaction.",
         actions: {
           type: "reaction",
           trigger: "You attempt a saving throw againts a magival effect, but you haven't rolled yet.",
@@ -97,20 +84,8 @@ export default [
     hp: 10,
     size: "medium",
     speed: 20,
-    mods: [
-     {
-        type: "dex",
-        value: 2
-      },
-      {
-        type: "int",
-        value: 2
-      },
-      {
-        type: "con",
-        value: -2
-      }
-    ],
+    boosts: ["dex", "int"],
+    flaw: "con",
     heritages: [
       {
         name: "Arctic Elf",
@@ -194,20 +169,8 @@ export default [
     size: "medium",
     speed: 20,
     freeBoosts: 1,
-    mods: [
-     {
-        type: "con",
-        value: 2
-      },
-      {
-        type: "cha",
-        value: 2
-      },
-      {
-        type: "str",
-        value: -2
-      }
-    ],
+    boosts: ["con", "cha"],
+    flaw: "str",
     heritages: [
       {
         name: "Chameleon Gnome",
@@ -286,20 +249,8 @@ export default [
     hp: 10,
     size: "medium",
     speed: 20,
-    mods: [
-     {
-        type: "dex",
-        value: 2
-      },
-      {
-        type: "cha",
-        value: 2
-      },
-      {
-        type: "wis",
-        value: -2
-      }
-    ],
+    boosts: ["dex", "cha"],
+    flaw: "wis",
     heritages: [
       {
         name: "Ancient-Blooded Dwarf",
@@ -379,20 +330,8 @@ export default [
     hp: 10,
     size: "medium",
     speed: 20,
-    mods: [
-     {
-        type: "dex",
-        value: 2
-      },
-      {
-        type: "wis",
-        value: 2
-      },
-      {
-        type: "str",
-        value: -2
-      }
-    ],
+    boosts: ["dex", "wis"],
+    flaw: "str",
     heritages: [
       {
         name: "Ancient-Blooded Dwarf",
@@ -472,7 +411,8 @@ export default [
     hp: 10,
     size: "medium",
     speed: 20,
-    mods: [],
+    boosts: [],
+    flaw: "",
     heritages: [
       {
         name: "Ancient-Blooded Dwarf",
