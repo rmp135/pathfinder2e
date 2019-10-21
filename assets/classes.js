@@ -18,7 +18,7 @@ export default [
         value: 2
       },
     ],
-    skills: [], // Chosen
+    skills: ["crafting"], // Chosen
     additionalSkills: 3,
     attacks: ["simple", "alchemical", "unarmed"],
     defenses: ["light", "unarmored"]
@@ -42,10 +42,34 @@ export default [
         value: 4
       },
     ],
-    skills: [], // Chosen
+    skills: ["athletics"], // Chosen
     additionalSkills: 3,
     attacks: ["simple", "martial", "unarmed"],
     defenses: ["light", "medium", "unarmored"]
+  },
+  {
+    name: "Bard",
+    keyAbility: "cha",
+    hp: 8,
+    perception: "e",
+    mods: [
+      {
+        type: "saveFort",
+        value: 2
+      },
+      {
+        type: "saveReflex",
+        value: 2
+      },
+      {
+        type: "saveWill",
+        value: 4
+      },
+    ],
+    skills: ["occultism", "performance"], // Chosen
+    additionalSkills: 4,
+    attacks: ["simple", "longsword", "rapier", "sap", "shortbow", "whip", "unarmed"],
+    defenses: ["light", "unarmored"]
   },
   {
     name: "Champion",
